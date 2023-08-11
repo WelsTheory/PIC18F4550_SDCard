@@ -1,0 +1,1732 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\SPI_PRUEBA.X.production.o
+cinit CODE 0 5C9E 5C9E 3C 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 5940 5940 94 1 2
+text1 CODE 0 13CE 13CE 892 1 2
+text2 CODE 0 2BD4 2BD4 46A 1 2
+text3 CODE 0 4572 4572 1AE 1 2
+text4 CODE 0 43C2 43C2 1B0 1 2
+text5 CODE 0 59D4 59D4 88 1 2
+text6 CODE 0 4E24 4E24 138 1 2
+text7 CODE 0 5A5C 5A5C 7A 1 2
+text8 CODE 0 3430 3430 3CC 1 2
+text9 CODE 0 5B40 5B40 5E 1 2
+text10 CODE 0 51A4 51A4 EA 1 2
+text11 CODE 0 5370 5370 D2 1 2
+text12 CODE 0 4BAC 4BAC 13C 1 2
+text13 CODE 0 3BBA 3BBA 34C 1 2
+text14 CODE 0 2264 2264 4CC 1 2
+text15 CODE 0 37FC 37FC 3BE 1 2
+text16 CODE 0 2730 2730 4A4 1 2
+text17 CODE 0 303E 303E 3F2 1 2
+text18 CODE 0 550A 550A C6 1 2
+text19 CODE 0 528E 528E E2 1 2
+text20 CODE 0 834 834 B9A 1 2
+text21 CODE 0 4F5C 4F5C 12C 1 2
+text22 CODE 0 3F06 3F06 2D6 1 2
+text23 CODE 0 5D66 5D66 28 1 2
+text24 CODE 0 5088 5088 11C 1 2
+text25 CODE 0 5AD6 5AD6 6A 1 2
+text26 CODE 0 5800 5800 A4 1 2
+text27 CODE 0 5C54 5C54 4A 1 2
+text28 CODE 0 4A50 4A50 15C 1 2
+text29 CODE 0 5442 5442 C8 1 2
+text30 CODE 0 5DB4 5DB4 1E 1 2
+text31 CODE 0 41DC 41DC 1E6 1 2
+text32 CODE 0 5CDA 5CDA 38 1 2
+text33 CODE 0 1C60 1C60 604 1 2
+text34 CODE 0 5D8E 5D8E 26 1 2
+text35 CODE 0 5D12 5D12 2A 1 2
+text36 CODE 0 55D0 55D0 C4 1 2
+text37 CODE 0 48CA 48CA 186 1 2
+text38 CODE 0 4720 4720 1AA 1 2
+text39 CODE 0 5756 5756 AA 1 2
+text40 CODE 0 4CE8 4CE8 13C 1 2
+text41 CODE 0 5BFC 5BFC 58 1 2
+text42 CODE 0 5694 5694 C2 1 2
+text43 CODE 0 5D3C 5D3C 2A 1 2
+text44 CODE 0 5B9E 5B9E 5E 1 2
+text45 CODE 0 5E04 5E04 A 1 2
+text46 CODE 0 5DEC 5DEC 18 1 2
+text47 CODE 0 58A4 58A4 9C 1 2
+text48 CODE 0 5DD2 5DD2 1A 1 2
+cstackCOMRAM COMRAM 1 1 1 5F 1 1
+cstackBANK0 BANK0 1 60 60 72 1 1
+bssBANK0 BANK0 1 D2 D2 25 1 1
+smallconst SMALLCONST 0 800 800 34 1 2
+idataBANK0 CODE 0 5E0E 5E0E 1 1 1
+dataBANK0 BANK0 1 F7 F7 1 1 1
+bssBIGRAM BIGRAM 1 5D2 5D2 22E 1 1
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM F8-5D1 1
+SFR F60-FFF 1
+BANK0 F8-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5D1 1
+CONST 4-7FF 1
+CONST 5E0F-7FFF 1
+SMALLCONST 5E0F-7FFF 1
+CODE 4-7FF 1
+CODE 5E0F-7FFF 1
+BIGRAM F8-5D1 1
+BIGSFR F60-FFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 5E0F-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\SPI_PRUEBA.X.production.o
+5DD2 text48 CODE >61:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5DD4 text48 CODE >62:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5DD8 text48 CODE >63:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5DE6 text48 CODE >64:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5DE8 text48 CODE >65:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5DEA text48 CODE >66:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+58A4 text47 CODE >125:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+58A4 text47 CODE >134:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+58B0 text47 CODE >135:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+58B8 text47 CODE >136:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+58CC text47 CODE >137:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+58D4 text47 CODE >138:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+58EC text47 CODE >139:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5904 text47 CODE >142:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5930 text47 CODE >144:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5936 text47 CODE >145:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+593C text47 CODE >147:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+593E text47 CODE >148:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5DEC text46 CODE >48:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5DEE text46 CODE >49:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5DF2 text46 CODE >50:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5E00 text46 CODE >51:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5E02 text46 CODE >52:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5E04 text45 CODE >95:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5E04 text45 CODE >97:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5E06 text45 CODE >98:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5E0C text45 CODE >99:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5B9E text44 CODE >75:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5B9E text44 CODE >80:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5BAA text44 CODE >81:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5BC4 text44 CODE >82:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5BCC text44 CODE >83:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5BE4 text44 CODE >85:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5BFA text44 CODE >86:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5D3C text43 CODE >108:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5D3C text43 CODE >110:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5D3E text43 CODE >111:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5D44 text43 CODE >112:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5D5E text43 CODE >114:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5D62 text43 CODE >115:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5D64 text43 CODE >116:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5694 text42 CODE >197:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5694 text42 CODE >198:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5696 text42 CODE >206:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56A8 text42 CODE >207:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56AC text42 CODE >208:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56C6 text42 CODE >212:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56CE text42 CODE >213:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56D4 text42 CODE >214:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56DA text42 CODE >215:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56E0 text42 CODE >216:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56E6 text42 CODE >217:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56EA text42 CODE >218:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+56FE text42 CODE >219:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5714 text42 CODE >220:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+571A text42 CODE >223:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5732 text42 CODE >224:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5736 text42 CODE >226:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5752 text42 CODE >229:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5754 text42 CODE >230:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5BFC text41 CODE >234:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5BFC text41 CODE >235:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5BFE text41 CODE >245:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5C0C text41 CODE >246:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5C0E text41 CODE >248:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5C26 text41 CODE >252:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5C3C text41 CODE >256:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5C52 text41 CODE >284:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4CE8 text40 CODE >373:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4CE8 text40 CODE >374:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4CEA text40 CODE >383:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4D12 text40 CODE >384:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4D28 text40 CODE >386:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4D48 text40 CODE >388:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4D76 text40 CODE >389:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4D9C text40 CODE >391:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4DC4 text40 CODE >392:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4DC8 text40 CODE >393:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4DE0 text40 CODE >394:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4E08 text40 CODE >396:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4E0C text40 CODE >398:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4E22 text40 CODE >399:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5756 text39 CODE >158:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5756 text39 CODE >167:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5770 text39 CODE >169:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5776 text39 CODE >170:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5788 text39 CODE >171:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5790 text39 CODE >173:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+57D0 text39 CODE >175:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+57D6 text39 CODE >176:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+57DC text39 CODE >177:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+57E4 text39 CODE >178:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+57FC text39 CODE >182:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+57FE text39 CODE >183:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4720 text38 CODE >408:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4720 text38 CODE >409:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4722 text38 CODE >415:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+474A text38 CODE >416:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4760 text38 CODE >417:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4774 text38 CODE >419:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4794 text38 CODE >421:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+47A6 text38 CODE >422:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+47EC text38 CODE >424:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+47F8 text38 CODE >427:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4820 text38 CODE >428:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4846 text38 CODE >430:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+486A text38 CODE >431:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+486E text38 CODE >432:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4886 text38 CODE >433:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+48A6 text38 CODE >434:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+48AE text38 CODE >437:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+48B2 text38 CODE >439:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+48C8 text38 CODE >440:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+48CA text37 CODE >700:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+48CA text37 CODE >706:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+48CE text37 CODE >709:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+48EA text37 CODE >710:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4906 text37 CODE >711:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+494C text37 CODE >712:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4950 text37 CODE >713:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4954 text37 CODE >714:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4962 text37 CODE >715:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+49C0 text37 CODE >716:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+49F0 text37 CODE >717:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A0C text37 CODE >718:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A42 text37 CODE >719:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A4C text37 CODE >723:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A4E text37 CODE >724:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+55D0 text36 CODE >729:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+55D0 text36 CODE >734:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+55D4 text36 CODE >737:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5604 text36 CODE >739:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5612 text36 CODE >741:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5622 text36 CODE >742:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5668 text36 CODE >743:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5670 text36 CODE >744:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5674 text36 CODE >746:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5690 text36 CODE >749:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5692 text36 CODE >750:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5D12 text35 CODE >1252:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5D12 text35 CODE >1257:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5D26 text35 CODE >1258:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5D3A text35 CODE >1259:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5D8E text34 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+5D8E text34 CODE >37:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+5D9A text34 CODE >38:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+5DA2 text34 CODE >39:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+5DAA text34 CODE >52:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+5DB2 text34 CODE >53:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+1C60 text33 CODE >449:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1C60 text33 CODE >450:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1C62 text33 CODE >456:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1C6A text33 CODE >460:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1C80 text33 CODE >462:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1C84 text33 CODE >464:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1C9A text33 CODE >468:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1CB6 text33 CODE >472:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1D00 text33 CODE >473:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1D16 text33 CODE >474:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1D6C text33 CODE >475:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1DA6 text33 CODE >476:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1DAA text33 CODE >477:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1DCE text33 CODE >478:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1E34 text33 CODE >479:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1E7E text33 CODE >485:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1E7E text33 CODE >486:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1E8C text33 CODE >487:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1EB2 text33 CODE >488:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1EB8 text33 CODE >489:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1EDC text33 CODE >490:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1EFC text33 CODE >491:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1F42 text33 CODE >496:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1F8C text33 CODE >497:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+1F9C text33 CODE >498:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2012 text33 CODE >499:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2016 text33 CODE >500:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+20A2 text33 CODE >510:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+20B2 text33 CODE >515:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2100 text33 CODE >521:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+214E text33 CODE >527:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2174 text33 CODE >528:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+21A6 text33 CODE >534:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+21CC text33 CODE >535:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+21D2 text33 CODE >536:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+21FA text33 CODE >542:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+21FE text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+220C text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+221A text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2222 text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+222A text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2232 text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+223A text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2242 text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+224A text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2252 text33 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+225C text33 CODE >545:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2260 text33 CODE >547:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+2262 text33 CODE >548:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5CDA text32 CODE >524:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5CDA text32 CODE >525:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5CE2 text32 CODE >527:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5CE6 text32 CODE >528:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5CF6 text32 CODE >527:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5D10 text32 CODE >529:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+41DC text31 CODE >760:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+41DC text31 CODE >767:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+41EA text31 CODE >768:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+41FA text31 CODE >770:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4230 text31 CODE >772:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4250 text31 CODE >773:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4264 text31 CODE >774:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4280 text31 CODE >775:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+429C text31 CODE >776:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+42C4 text31 CODE >777:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+42EC text31 CODE >779:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+433C text31 CODE >780:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+437E text31 CODE >781:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+438C text31 CODE >784:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+43BA text31 CODE >785:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+43BE text31 CODE >786:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+43BE text31 CODE >788:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+43C0 text31 CODE >789:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5DB4 text30 CODE >359:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5DB4 text30 CODE >360:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5DB6 text30 CODE >363:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5DCC text30 CODE >364:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5DD0 text30 CODE >365:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+5442 text29 CODE >2372:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5442 text29 CODE >2376:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+544A text29 CODE >2379:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5500 text29 CODE >2380:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5506 text29 CODE >2384:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5508 text29 CODE >2385:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A50 text28 CODE >2813:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A50 text28 CODE >2822:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A5E text28 CODE >2823:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A6E text28 CODE >2824:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4A88 text28 CODE >2833:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4ABA text28 CODE >2834:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4ACA text28 CODE >2835:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4ADE text28 CODE >2836:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4AEE text28 CODE >2837:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4B16 text28 CODE >2838:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4B3E text28 CODE >2839:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4B3E text28 CODE >2840:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4B5A text28 CODE >2841:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4B6A text28 CODE >2842:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4B7A text28 CODE >2843:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4B92 text28 CODE >2844:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4BA8 text28 CODE >2849:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4BAA text28 CODE >2850:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5C54 text27 CODE >2861:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5C54 text27 CODE >2869:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5C62 text27 CODE >2870:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5C72 text27 CODE >2873:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5C80 text27 CODE >2874:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5C90 text27 CODE >2882:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5C9C text27 CODE >2889:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5800 text26 CODE >7:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5800 text26 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5810 text26 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5826 text26 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+582A text26 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+582E text26 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5838 text26 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+583A text26 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5848 text26 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5852 text26 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5870 text26 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5880 text26 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5882 text26 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+588C text26 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5892 text26 CODE >28:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5892 text26 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+58A2 text26 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+5AD6 text25 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5AD6 text25 CODE >119:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5AE6 text25 CODE >121:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5AF4 text25 CODE >122:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5B04 text25 CODE >123:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5B0E text25 CODE >124:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5B18 text25 CODE >125:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5B2E text25 CODE >128:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5B3E text25 CODE >129:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+5088 text24 CODE >2175:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5088 text24 CODE >2180:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+50B2 text24 CODE >2181:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+50DE text24 CODE >2182:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+50E4 text24 CODE >2184:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5108 text24 CODE >2185:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+510E text24 CODE >2187:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5152 text24 CODE >2188:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5158 text24 CODE >2189:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+51A0 text24 CODE >2192:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+51A2 text24 CODE >2193:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5D66 text23 CODE >4:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D66 text23 CODE >6:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D6A text23 CODE >8:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D6C text23 CODE >9:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D6E text23 CODE >10:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D70 text23 CODE >11:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D72 text23 CODE >14:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D74 text23 CODE >15:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D76 text23 CODE >16:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D78 text23 CODE >17:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D7A text23 CODE >18:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D7C text23 CODE >19:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D84 text23 CODE >20:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D86 text23 CODE >21:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D88 text23 CODE >22:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D8A text23 CODE >23:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+5D8C text23 CODE >24:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\SPI_libreria.c
+3F06 text22 CODE >299:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3F06 text22 CODE >300:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3F08 text22 CODE >307:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3F1E text22 CODE >309:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3F36 text22 CODE >311:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3F3A text22 CODE >312:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3F5A text22 CODE >314:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3F5E text22 CODE >315:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3F84 text22 CODE >316:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3FAA text22 CODE >317:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3FD4 text22 CODE >318:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+3FF6 text22 CODE >319:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4002 text22 CODE >320:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+402C text22 CODE >321:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+403C text22 CODE >322:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4054 text22 CODE >323:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+408C text22 CODE >324:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+40B6 text22 CODE >325:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+40E0 text22 CODE >329:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4108 text22 CODE >330:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4110 text22 CODE >331:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4114 text22 CODE >332:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+411C text22 CODE >333:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+411C text22 CODE >334:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4128 text22 CODE >335:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4152 text22 CODE >336:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4162 text22 CODE >337:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+417A text22 CODE >338:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+41B2 text22 CODE >339:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+41BA text22 CODE >340:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+41BA text22 CODE >342:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+41BE text22 CODE >343:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+41C2 text22 CODE >345:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+41D2 text22 CODE >346:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+41DA text22 CODE >351:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\diskio.c
+4F5C text21 CODE >2114:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4F5C text21 CODE >2120:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4F60 text21 CODE >2129:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4F7A text21 CODE >2130:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4FC8 text21 CODE >2131:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4FE4 text21 CODE >2132:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4FF4 text21 CODE >2133:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5012 text21 CODE >2134:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5040 text21 CODE >2135:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5052 text21 CODE >2136:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+505A text21 CODE >2137:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+506E text21 CODE >2156:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+507A text21 CODE >2161:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5086 text21 CODE >2165:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+834 text20 CODE >2203:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+834 text20 CODE >2219:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+840 text20 CODE >2220:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+854 text20 CODE >2221:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+86A text20 CODE >2224:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+884 text20 CODE >2225:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+89C text20 CODE >2228:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+8AC text20 CODE >2230:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+8C4 text20 CODE >2231:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+8DA text20 CODE >2232:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+8E8 text20 CODE >2233:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+906 text20 CODE >2234:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+90C text20 CODE >2235:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+912 text20 CODE >2242:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+91C text20 CODE >2243:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+92C text20 CODE >2244:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+942 text20 CODE >2245:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+950 text20 CODE >2246:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+956 text20 CODE >2247:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+978 text20 CODE >2254:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+988 text20 CODE >2255:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+9A8 text20 CODE >2256:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+9BC text20 CODE >2257:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+9DE text20 CODE >2258:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+A10 text20 CODE >2259:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+A8C text20 CODE >2260:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+A94 text20 CODE >2261:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+A9C text20 CODE >2262:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+AB4 text20 CODE >2264:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+AE4 text20 CODE >2265:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+B30 text20 CODE >2266:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+B5A text20 CODE >2268:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+B72 text20 CODE >2269:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+B88 text20 CODE >2273:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+BAE text20 CODE >2276:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+BCE text20 CODE >2277:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+C00 text20 CODE >2278:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+C1C text20 CODE >2280:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+C38 text20 CODE >2281:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+C76 text20 CODE >2283:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+CB4 text20 CODE >2285:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+CD2 text20 CODE >2286:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+D38 text20 CODE >2289:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+D58 text20 CODE >2290:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+D8A text20 CODE >2293:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+DAA text20 CODE >2294:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+DDC text20 CODE >2296:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+DF0 text20 CODE >2297:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+E06 text20 CODE >2300:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+E56 text20 CODE >2301:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+E78 text20 CODE >2302:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+EBE text20 CODE >2303:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+EDA text20 CODE >2304:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+EDE text20 CODE >2305:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+EFE text20 CODE >2306:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+F1E text20 CODE >2309:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+F52 text20 CODE >2310:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+F6E text20 CODE >2311:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+FA2 text20 CODE >2312:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+FD6 text20 CODE >2313:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+FE8 text20 CODE >2314:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+100A text20 CODE >2315:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1032 text20 CODE >2316:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1070 text20 CODE >2317:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1074 text20 CODE >2318:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1096 text20 CODE >2319:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+10E6 text20 CODE >2320:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+11B2 text20 CODE >2322:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+11B2 text20 CODE >2323:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+120E text20 CODE >2328:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+124A text20 CODE >2331:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+125A text20 CODE >2333:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+12BE text20 CODE >2337:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+12CE text20 CODE >2338:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1352 text20 CODE >2343:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+137A text20 CODE >2346:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+13A2 text20 CODE >2352:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+13AE text20 CODE >2353:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+13CC text20 CODE >2362:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+528E text19 CODE >2402:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+528E text19 CODE >2411:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5296 text19 CODE >2414:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+52AA text19 CODE >2415:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+52BE text19 CODE >2416:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+52D8 text19 CODE >2418:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+52EA text19 CODE >2425:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+52F4 text19 CODE >2428:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5306 text19 CODE >2429:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5310 text19 CODE >2434:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+532A text19 CODE >2436:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5352 text19 CODE >2438:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+536C text19 CODE >2439:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+536E text19 CODE >2440:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+550A text18 CODE >800:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+550A text18 CODE >805:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5516 text18 CODE >806:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+556C text18 CODE >807:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+55CE text18 CODE >808:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+303E text17 CODE >818:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+303E text17 CODE >828:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3082 text17 CODE >829:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3092 text17 CODE >831:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3096 text17 CODE >832:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+309E text17 CODE >834:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+30A2 text17 CODE >835:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+30A2 text17 CODE >836:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+30BC text17 CODE >837:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3128 text17 CODE >838:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+315A text17 CODE >839:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+31C6 text17 CODE >840:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+31FC text17 CODE >841:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3246 text17 CODE >842:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+324A text17 CODE >845:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+32BC text17 CODE >846:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+32EE text17 CODE >847:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+330A text17 CODE >848:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+330E text17 CODE >851:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3388 text17 CODE >852:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+33C0 text17 CODE >853:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+33E0 text17 CODE >854:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+33E4 text17 CODE >858:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+33F6 text17 CODE >858:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3404 text17 CODE >858:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+340C text17 CODE >858:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3414 text17 CODE >858:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+341E text17 CODE >859:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+341E text17 CODE >861:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+342E text17 CODE >862:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2730 text16 CODE >873:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2730 text16 CODE >884:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2774 text16 CODE >885:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2778 text16 CODE >887:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+277C text16 CODE >889:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+277C text16 CODE >890:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2796 text16 CODE >891:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+27F0 text16 CODE >892:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2804 text16 CODE >893:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+282C text16 CODE >894:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2884 text16 CODE >895:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2894 text16 CODE >896:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+28EE text16 CODE >897:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2902 text16 CODE >898:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2926 text16 CODE >899:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+29A8 text16 CODE >900:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+29B8 text16 CODE >901:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+29BC text16 CODE >904:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2A1C text16 CODE >905:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2A30 text16 CODE >906:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2A62 text16 CODE >907:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2A72 text16 CODE >908:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2A82 text16 CODE >909:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2A86 text16 CODE >912:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2AEE text16 CODE >913:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2B02 text16 CODE >914:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2B3A text16 CODE >915:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2B6A text16 CODE >916:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2B82 text16 CODE >917:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2B92 text16 CODE >918:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2B96 text16 CODE >922:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BA8 text16 CODE >922:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BB6 text16 CODE >922:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BBE text16 CODE >922:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BC6 text16 CODE >922:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BD0 text16 CODE >925:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BD2 text16 CODE >926:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+37FC text15 CODE >990:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+37FC text15 CODE >999:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3812 text15 CODE >1000:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+382E text15 CODE >1001:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3884 text15 CODE >1004:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+38B0 text15 CODE >1005:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+38E0 text15 CODE >1006:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3910 text15 CODE >1007:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+393E text15 CODE >1008:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+394E text15 CODE >1009:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+394E text15 CODE >1011:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+395E text15 CODE >1013:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+396A text15 CODE >1014:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3994 text15 CODE >1015:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+39A4 text15 CODE >1016:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+39D2 text15 CODE >1018:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+39FE text15 CODE >1019:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3A1A text15 CODE >1020:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3A50 text15 CODE >1022:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3A78 text15 CODE >1025:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3AA8 text15 CODE >1026:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3ACE text15 CODE >1027:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3AFE text15 CODE >1029:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3B0E text15 CODE >1030:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3B2A text15 CODE >1031:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3B52 text15 CODE >1032:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3B68 text15 CODE >1033:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3B7C text15 CODE >1036:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3BA8 text15 CODE >1037:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3BA8 text15 CODE >1039:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3BB8 text15 CODE >1040:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2264 text14 CODE >1128:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2264 text14 CODE >1140:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2286 text14 CODE >1141:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+22BA text14 CODE >1142:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+22C0 text14 CODE >1144:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+22DE text14 CODE >1145:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+22F4 text14 CODE >1147:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2316 text14 CODE >1148:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2344 text14 CODE >1152:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+239E text14 CODE >1153:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+23DE text14 CODE >1154:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2400 text14 CODE >1155:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2422 text14 CODE >1156:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2454 text14 CODE >1158:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+246A text14 CODE >1159:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+24AA text14 CODE >1160:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+24C8 text14 CODE >1161:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+24E2 text14 CODE >1162:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2502 text14 CODE >1164:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+252A text14 CODE >1165:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+255C text14 CODE >1166:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+25A4 text14 CODE >1167:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+25B2 text14 CODE >1168:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+25CA text14 CODE >1169:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+25F2 text14 CODE >1170:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2610 text14 CODE >1171:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2646 text14 CODE >1172:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2668 text14 CODE >1178:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2684 text14 CODE >1179:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+26C6 text14 CODE >1184:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+26DA text14 CODE >1185:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+272C text14 CODE >1187:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+272E text14 CODE >1188:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3BBA text13 CODE >1080:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3BBA text13 CODE >1089:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3BCE text13 CODE >1090:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3BEA text13 CODE >1091:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3C34 text13 CODE >1092:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3C3A text13 CODE >1093:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3C7A text13 CODE >1094:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3C9E text13 CODE >1096:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3CB4 text13 CODE >1097:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3CE2 text13 CODE >1099:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3D06 text13 CODE >1100:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3D0A text13 CODE >1102:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3D2E text13 CODE >1103:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3D32 text13 CODE >1104:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3D66 text13 CODE >1105:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3D8A text13 CODE >1106:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3DDA text13 CODE >1108:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3DE2 text13 CODE >1103:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3DE2 text13 CODE >1109:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3DF8 text13 CODE >1110:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3E2C text13 CODE >1112:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3E48 text13 CODE >1113:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3E64 text13 CODE >1114:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3EB0 text13 CODE >1115:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3F02 text13 CODE >1117:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3F04 text13 CODE >1118:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4BAC text12 CODE >1199:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4BAC text12 CODE >1208:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4BC4 text12 CODE >1209:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4BD4 text12 CODE >1210:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4BDC text12 CODE >1212:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4C10 text12 CODE >1213:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4C24 text12 CODE >1214:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4C7E text12 CODE >1215:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4C9E text12 CODE >1217:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4CA6 text12 CODE >1219:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4CBE text12 CODE >1220:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4CCE text12 CODE >1222:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4CE4 text12 CODE >1223:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4CE6 text12 CODE >1224:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5370 text11 CODE >507:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5370 text11 CODE >508:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5378 text11 CODE >509:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5380 text11 CODE >512:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5384 text11 CODE >513:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+53C2 text11 CODE >514:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+53D2 text11 CODE >515:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+53DA text11 CODE >512:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+53F4 text11 CODE >519:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5426 text11 CODE >518:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5440 text11 CODE >520:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+51A4 text10 CODE >1578:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+51A4 text10 CODE >1629:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+51BE text10 CODE >1632:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+51CE text10 CODE >1633:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5202 text10 CODE >1634:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5212 text10 CODE >1635:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+523A text10 CODE >1636:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5270 text10 CODE >1640:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5288 text10 CODE >1644:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+528C text10 CODE >1645:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5B40 text9 CODE >543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5B40 text9 CODE >544:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5B8C text9 CODE >545:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5B9C text9 CODE >546:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3430 text8 CODE >1843:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3430 text8 CODE >1974:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3480 text8 CODE >1975:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3494 text8 CODE >1976:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+34B0 text8 CODE >1977:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+34CA text8 CODE >1992:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+34E8 text8 CODE >1993:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3520 text8 CODE >1994:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3548 text8 CODE >1995:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3574 text8 CODE >1996:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3584 text8 CODE >1997:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3590 text8 CODE >1999:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+35A0 text8 CODE >2000:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+35A4 text8 CODE >2008:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+35A4 text8 CODE >2009:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+35E4 text8 CODE >2010:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3602 text8 CODE >2011:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3668 text8 CODE >2013:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+367C text8 CODE >2014:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3690 text8 CODE >2015:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3694 text8 CODE >2016:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+36BC text8 CODE >2018:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+36DC text8 CODE >2019:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+36DE text8 CODE >2020:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+36E2 text8 CODE >2021:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3702 text8 CODE >2022:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3708 text8 CODE >2025:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3720 text8 CODE >2028:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+373C text8 CODE >2029:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3764 text8 CODE >2031:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+377A text8 CODE >2032:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+37A0 text8 CODE >2034:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+37BC text8 CODE >2035:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+37D2 text8 CODE >2036:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+37E8 text8 CODE >2038:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+37F8 text8 CODE >2040:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+37FA text8 CODE >2042:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5A5C text7 CODE >533:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5A5C text7 CODE >534:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5A6C text7 CODE >535:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5A74 text7 CODE >537:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5ACC text7 CODE >538:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5AD4 text7 CODE >539:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4E24 text6 CODE >1458:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4E24 text6 CODE >1468:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4E3C text6 CODE >1469:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4E54 text6 CODE >1475:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4E88 text6 CODE >1476:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4E9C text6 CODE >1477:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4EB0 text6 CODE >1478:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4EBC text6 CODE >1479:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4ED4 text6 CODE >1502:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4F2C text6 CODE >1505:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4F46 text6 CODE >1506:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4F5A text6 CODE >1509:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+59D4 text5 CODE >1235:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+59D4 text5 CODE >1242:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+59F4 text5 CODE >1243:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5A0E text5 CODE >1244:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5A4A text5 CODE >1246:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5A5A text5 CODE >1247:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+43C2 text4 CODE >2052:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+43C2 text4 CODE >2068:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+43FA text4 CODE >2069:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4400 text4 CODE >2070:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4416 text4 CODE >2073:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4430 text4 CODE >2074:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4448 text4 CODE >2075:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4458 text4 CODE >2076:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+445C text4 CODE >2078:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4474 text4 CODE >2079:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4488 text4 CODE >2080:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4498 text4 CODE >2081:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+44B4 text4 CODE >2082:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+44C4 text4 CODE >2083:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+44D6 text4 CODE >2088:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+44D6 text4 CODE >2089:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+44EC text4 CODE >2093:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+44EC text4 CODE >2094:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+44FE text4 CODE >2095:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4512 text4 CODE >2096:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4530 text4 CODE >2099:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+456E text4 CODE >2103:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4570 text4 CODE >2104:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4572 text3 CODE >937:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4572 text3 CODE >948:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+45B6 text3 CODE >949:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+45BC text3 CODE >951:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+45C0 text3 CODE >952:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+45C6 text3 CODE >953:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+45CA text3 CODE >954:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+45F6 text3 CODE >955:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4612 text3 CODE >956:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+462C text3 CODE >957:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4650 text3 CODE >958:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4680 text3 CODE >959:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+4694 text3 CODE >960:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+46BC text3 CODE >961:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+46D2 text3 CODE >962:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+46E2 text3 CODE >974:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+46F2 text3 CODE >953:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+46F2 text3 CODE >975:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+471C text3 CODE >978:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+471E text3 CODE >979:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BD4 text2 CODE >2449:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BD4 text2 CODE >2464:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BEE text2 CODE >2465:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2BFA text2 CODE >2468:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C02 text2 CODE >2473:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C06 text2 CODE >2474:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C24 text2 CODE >2479:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C34 text2 CODE >2480:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C3C text2 CODE >2481:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C54 text2 CODE >2482:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C5C text2 CODE >2484:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C6C text2 CODE >2485:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C7E text2 CODE >2486:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C82 text2 CODE >2493:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2C98 text2 CODE >2494:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2CA8 text2 CODE >2495:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2CBA text2 CODE >2499:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2CCA text2 CODE >2501:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2CCC text2 CODE >2502:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2CD4 text2 CODE >2503:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2CD8 text2 CODE >2505:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2CFA text2 CODE >2506:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2CFE text2 CODE >2507:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D02 text2 CODE >2508:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D10 text2 CODE >2509:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D14 text2 CODE >2511:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D14 text2 CODE >2512:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D32 text2 CODE >2513:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D32 text2 CODE >2514:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D4E text2 CODE >2515:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D6A text2 CODE >2516:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D78 text2 CODE >2517:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2D8C text2 CODE >2518:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2DB0 text2 CODE >2519:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2DCC text2 CODE >2520:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2DDE text2 CODE >2521:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2DF4 text2 CODE >2522:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2E10 text2 CODE >2523:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2E30 text2 CODE >2524:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2E40 text2 CODE >2525:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2E74 text2 CODE >2526:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2E98 text2 CODE >2532:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2EA8 text2 CODE >2533:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2EC2 text2 CODE >2534:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2EC6 text2 CODE >2535:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2ECA text2 CODE >2536:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2EF2 text2 CODE >2537:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2EF6 text2 CODE >2540:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2EF6 text2 CODE >2541:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2F06 text2 CODE >2542:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2F14 text2 CODE >2543:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2F16 text2 CODE >2544:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2F3E text2 CODE >2545:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2F52 text2 CODE >2565:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2F62 text2 CODE >2566:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2F72 text2 CODE >2567:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2F80 text2 CODE >2568:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2FB2 text2 CODE >2569:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2FDA text2 CODE >2570:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+2FEE text2 CODE >2571:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3002 text2 CODE >2575:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+3012 text2 CODE >2576:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+303A text2 CODE >2580:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+303C text2 CODE >2581:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+13CE text1 CODE >2691:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+13CE text1 CODE >2701:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+13D6 text1 CODE >2705:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+13E2 text1 CODE >2707:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+13F2 text1 CODE >2708:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1406 text1 CODE >2709:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1426 text1 CODE >2711:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1444 text1 CODE >2713:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+14AE text1 CODE >2717:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+14E8 text1 CODE >2718:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1538 text1 CODE >2719:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1548 text1 CODE >2720:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+156A text1 CODE >2721:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1586 text1 CODE >2722:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+159C text1 CODE >2723:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+15D4 text1 CODE >2730:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1614 text1 CODE >2732:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1630 text1 CODE >2733:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+165A text1 CODE >2734:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+168A text1 CODE >2735:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+16A6 text1 CODE >2736:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+16E4 text1 CODE >2739:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+174C text1 CODE >2740:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1762 text1 CODE >2748:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+17A4 text1 CODE >2749:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+17D0 text1 CODE >2750:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+17DC text1 CODE >2751:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+17FC text1 CODE >2752:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+180E text1 CODE >2753:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+184A text1 CODE >2754:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+186E text1 CODE >2755:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+18B8 text1 CODE >2756:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+18CE text1 CODE >2759:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1936 text1 CODE >2760:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+199C text1 CODE >2761:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+19B2 text1 CODE >2770:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+19D2 text1 CODE >2771:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+19D6 text1 CODE >2774:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1A0C text1 CODE >2775:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1A46 text1 CODE >2776:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1A6A text1 CODE >2785:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1A88 text1 CODE >2787:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1AB8 text1 CODE >2788:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1AD6 text1 CODE >2790:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1B16 text1 CODE >2791:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1B2C text1 CODE >2792:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1B8A text1 CODE >2793:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1BA2 text1 CODE >2798:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1BF0 text1 CODE >2800:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1C4E text1 CODE >2801:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+1C5E text1 CODE >2804:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\ff.c
+5940 text0 CODE >9:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\Programa_principal.c
+5940 text0 CODE >11:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\Programa_principal.c
+5944 text0 CODE >12:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\Programa_principal.c
+5948 text0 CODE >13:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\Programa_principal.c
+5970 text0 CODE >15:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\Programa_principal.c
+599A text0 CODE >17:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\Programa_principal.c
+59C0 text0 CODE >18:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\Programa_principal.c
+59CC text0 CODE >21:D:\Electronica\Ejemplos_Pruebas\Ejemplos_Randoms\pic18f4550_c\SPI_PRUEBA.X\Programa_principal.c
+5C9E cinit CODE >2405:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5C9E cinit CODE >2407:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5C9E cinit CODE >2410:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5C9E cinit CODE >2442:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CA0 cinit CODE >2443:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CA2 cinit CODE >2444:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CA4 cinit CODE >2445:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CA6 cinit CODE >2446:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CA8 cinit CODE >2447:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CAA cinit CODE >2448:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CAC cinit CODE >2449:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CB0 cinit CODE >2453:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CB4 cinit CODE >2454:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CB8 cinit CODE >2455:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CB8 cinit CODE >2456:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CBA cinit CODE >2457:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CBC cinit CODE >2458:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CBE cinit CODE >2459:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CC0 cinit CODE >2460:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CC2 cinit CODE >2461:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CC4 cinit CODE >2464:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CC8 cinit CODE >2465:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CCA cinit CODE >2466:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CCA cinit CODE >2467:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CCC cinit CODE >2468:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CCE cinit CODE >2469:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CD0 cinit CODE >2475:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CD0 cinit CODE >2478:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CD2 cinit CODE >2479:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CD4 cinit CODE >2480:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+5CD6 cinit CODE >2481:C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\SPI_PRUEBA.X.production.o
+__Hspace_0 5E0F 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Hspace_1 800 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+?_mem_cmp 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_get_ldnumber 4F5C 0 CODE 0 text21 dist/default/production\SPI_PRUEBA.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\SPI_PRUEBA.X.production.o
+follow_path@dir 8B 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+follow_path@res 8E 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_move_window 5694 0 CODE 0 text36 dist/default/production\SPI_PRUEBA.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+?_chk_chr 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\SPI_PRUEBA.X.production.o
+disk_write@count 17 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\SPI_PRUEBA.X.production.o
+disk_ioctl@cmd 11 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_ioctl@csd 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_ioctl@ptr 36 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_ioctl@res 34 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\SPI_PRUEBA.X.production.o
+_Fsid D2 0 BANK0 1 bssBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_Stat F7 0 BANK0 1 dataBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+_main 5940 0 CODE 0 text0 dist/default/production\SPI_PRUEBA.X.production.o
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\SPI_PRUEBA.X.production.o
+start 0 0 CODE 0 init C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+?_ld_clust 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_ioctl@csize 30 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_st_clust 5D12 0 CODE 0 text35 dist/default/production\SPI_PRUEBA.X.production.o
+_get_fat 303E 0 CODE 0 text17 dist/default/production\SPI_PRUEBA.X.production.o
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_SPI_Write 5E04 0 CODE 0 text46 dist/default/production\SPI_PRUEBA.X.production.o
+get_fat@clst 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+remove_chain@nxt 61 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+remove_chain@res 60 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_dir_find 4E24 0 CODE 0 text6 dist/default/production\SPI_PRUEBA.X.production.o
+_dir_next 2264 0 CODE 0 text14 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_disk_ioctl 2264 0 CODE 0 text33 dist/default/production\SPI_PRUEBA.X.production.o
+dir_register@res 8D 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+create_chain@ncl 65 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+create_chain@res 60 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+create_chain@scl 61 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+mem_set@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_set@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_set@val 3 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_follow_path 4572 0 CODE 0 text4 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_disk_write 48CA 0 CODE 0 text38 dist/default/production\SPI_PRUEBA.X.production.o
+_wait_ready 5B9E 0 CODE 0 text44 dist/default/production\SPI_PRUEBA.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_st_clust 5D3C 0 CODE 0 text35 dist/default/production\SPI_PRUEBA.X.production.o
+get_ldnumber@vol 7 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_mount@fs 52 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_mount@rp 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_open@dir B8 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_open@res B7 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_open@sfn A3 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_dir_find 4F5C 0 CODE 0 text6 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_dir_next 2730 0 CODE 0 text14 dist/default/production\SPI_PRUEBA.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+f_write@bw 73 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_write@cc 85 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_write@fp 6D 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\SPI_PRUEBA.X.production.o
+put_fat@clst 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_SPI_Write 5DEC 0 CODE 0 text46 dist/default/production\SPI_PRUEBA.X.production.o
+follow_path@dp 87 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+follow_path@ns 8D 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+put_fat@res 53 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+put_fat@val 41 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_read@buff 11 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_read@pdrv 19 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\SPI_PRUEBA.X.production.o
+disk_read@sector 13 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_get_ldnumber 5088 0 CODE 0 text21 dist/default/production\SPI_PRUEBA.X.production.o
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_create_name 3430 0 CODE 0 text8 dist/default/production\SPI_PRUEBA.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+disk_initialize@ty 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+dir_alloc@dp 81 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+create_name@path B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+?_get_fat 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+get_fat@val 4B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_dir_sdi 3BBA 0 CODE 0 text13 dist/default/production\SPI_PRUEBA.X.production.o
+?_clust2sect D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\SPI_PRUEBA.X.production.o
+__end_of___lmul 5B40 0 CODE 0 text25 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of___wmul 5DB4 0 CODE 0 text34 dist/default/production\SPI_PRUEBA.X.production.o
+?_get_ldnumber 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_dir_alloc 4CE8 0 CODE 0 text12 dist/default/production\SPI_PRUEBA.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_wait_ready 5BFC 0 CODE 0 text44 dist/default/production\SPI_PRUEBA.X.production.o
+_CardType D6 0 BANK0 1 bssBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\SPI_PRUEBA.X.production.o
+disk_read@count 17 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+chk_chr@chr 3 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+chk_chr@str 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+st_clust@dir 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\SPI_PRUEBA.X.production.o
+_create_chain 37FC 0 CODE 0 text15 dist/default/production\SPI_PRUEBA.X.production.o
+dir_next@dp 6D 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_validate 5442 0 CODE 0 text29 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of___lldiv 58A4 0 CODE 0 text26 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@nrsv 82 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@path 47 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@stat 8C 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+sync_window@wsect 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+sync_fs@fs 38 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_dir_register 51A4 0 CODE 0 text10 dist/default/production\SPI_PRUEBA.X.production.o
+remove_chain@clst 58 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_validate 550A 0 CODE 0 text29 dist/default/production\SPI_PRUEBA.X.production.o
+check_fs@sect 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_f_open 303E 0 CODE 0 text2 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_f_sync 4BAC 0 CODE 0 text28 dist/default/production\SPI_PRUEBA.X.production.o
+_dir_alloc 4BAC 0 CODE 0 text12 dist/default/production\SPI_PRUEBA.X.production.o
+dir_find@c 83 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_SPI_Init_Master 5D8E 0 CODE 0 text23 dist/default/production\SPI_PRUEBA.X.production.o
+disk_initialize@n 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+___lldiv@counter D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\SPI_PRUEBA.X.production.o
+start_initialization 5C9E 0 CODE 0 cinit dist/default/production\SPI_PRUEBA.X.production.o
+_find_volume 834 0 CODE 0 text20 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_disk_initialize 41DC 0 CODE 0 text22 dist/default/production\SPI_PRUEBA.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_chain@clst 58 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_TRISAbits F92 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+_TRISBbits F93 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+___lldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+sync_window@fs 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+sync_window@nf 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_f_close 5C9E 0 CODE 0 text27 dist/default/production\SPI_PRUEBA.X.production.o
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_SSPBUF FC9 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_f_mount 5370 0 CODE 0 text19 dist/default/production\SPI_PRUEBA.X.production.o
+mem_cmp@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_cmp@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_cmp@src 3 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_f_write 1C60 0 CODE 0 text1 dist/default/production\SPI_PRUEBA.X.production.o
+get_ldnumber@tp 5 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+get_ldnumber@tt B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+dir_sdi@clst 66 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+dir_sdi@sect 62 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+get_fat@bc 53 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+get_fat@fs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+get_fat@wc 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+dir_next@c 79 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+dir_next@i 7B 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+dir_next@stretch 6F 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+__end_of_disk_status 5DD2 0 CODE 0 text30 dist/default/production\SPI_PRUEBA.X.production.o
+mem_cpy@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_cpy@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_cpy@src 3 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+dir_alloc@n 88 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_select 5D66 0 CODE 0 text43 dist/default/production\SPI_PRUEBA.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\SPI_PRUEBA.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\SPI_PRUEBA.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\SPI_PRUEBA.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\SPI_PRUEBA.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\SPI_PRUEBA.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\SPI_PRUEBA.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\SPI_PRUEBA.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\SPI_PRUEBA.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\SPI_PRUEBA.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@fasize 8D 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_create_chain 3BBA 0 CODE 0 text15 dist/default/production\SPI_PRUEBA.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\SPI_PRUEBA.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\SPI_PRUEBA.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\SPI_PRUEBA.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\SPI_PRUEBA.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\SPI_PRUEBA.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\SPI_PRUEBA.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\SPI_PRUEBA.X.production.o
+dir_sdi@dp 55 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+dir_sdi@ic 60 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_SPI_Init_Master 5D66 0 CODE 0 text23 dist/default/production\SPI_PRUEBA.X.production.o
+_create_name$1131 F 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\SPI_PRUEBA.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\SPI_PRUEBA.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\SPI_PRUEBA.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+mem_cmp@d 9 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_cmp@r D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_cmp@s B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_cpy@d 9 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_cpy@s B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+mem_set@d 7 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_sync_window 48CA 0 CODE 0 text37 dist/default/production\SPI_PRUEBA.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\SPI_PRUEBA.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\SPI_PRUEBA.X.production.o
+_disk_read$650 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_dir_register 528E 0 CODE 0 text10 dist/default/production\SPI_PRUEBA.X.production.o
+_disk_initialize 3F06 0 CODE 0 text22 dist/default/production\SPI_PRUEBA.X.production.o
+move_window@fs 30 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\SPI_PRUEBA.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\SPI_PRUEBA.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\SPI_PRUEBA.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\SPI_PRUEBA.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\SPI_PRUEBA.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\SPI_PRUEBA.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\SPI_PRUEBA.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\SPI_PRUEBA.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\SPI_PRUEBA.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\SPI_PRUEBA.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\SPI_PRUEBA.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\SPI_PRUEBA.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\SPI_PRUEBA.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\SPI_PRUEBA.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\SPI_PRUEBA.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\SPI_PRUEBA.X.production.o
+?_create_chain 56 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\SPI_PRUEBA.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\SPI_PRUEBA.X.production.o
+f_open@cl AF 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_open@dj BA 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_open@dw B3 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_open@fp 9A 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+validate@fil 8 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+validate@obj 2 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\SPI_PRUEBA.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\SPI_PRUEBA.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\SPI_PRUEBA.X.production.o
+__Hinit 4 0 CODE 0 init dist/default/production\SPI_PRUEBA.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\SPI_PRUEBA.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\SPI_PRUEBA.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\SPI_PRUEBA.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\SPI_PRUEBA.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\SPI_PRUEBA.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\SPI_PRUEBA.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\SPI_PRUEBA.X.production.o
+__Linit 0 0 CODE 0 init dist/default/production\SPI_PRUEBA.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\SPI_PRUEBA.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\SPI_PRUEBA.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\SPI_PRUEBA.X.production.o
+___lmul 5AD6 0 CODE 0 text25 dist/default/production\SPI_PRUEBA.X.production.o
+___wmul 5D8E 0 CODE 0 text34 dist/default/production\SPI_PRUEBA.X.production.o
+_find_volume$1235 70 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_find_volume$1236 74 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\SPI_PRUEBA.X.production.o
+move_window@res 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\SPI_PRUEBA.X.production.o
+_Fil D7 0 BANK0 1 bssBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__S0 5E0F 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__S1 800 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+_SPI_Exchange 5DD2 0 CODE 0 text48 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_sync_fs 43C2 0 CODE 0 text31 dist/default/production\SPI_PRUEBA.X.production.o
+disk_write@sector 13 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_mem_cmp 5AD6 0 CODE 0 text7 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_mem_cpy 5442 0 CODE 0 text11 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_mem_set 5D12 0 CODE 0 text32 dist/default/production\SPI_PRUEBA.X.production.o
+check_fs@fs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@i 95 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@sysect 7C 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@szbfat 76 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_rcvr_datablock 58A4 0 CODE 0 text47 dist/default/production\SPI_PRUEBA.X.production.o
+xmit_datablock@token 6 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_f_open 2BD4 0 CODE 0 text2 dist/default/production\SPI_PRUEBA.X.production.o
+_f_sync 4A50 0 CODE 0 text28 dist/default/production\SPI_PRUEBA.X.production.o
+SPI_Write@x 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_chk_chr 5B9E 0 CODE 0 text9 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@br 60 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@fs 98 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@pt 7A 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+remove_chain@fs 56 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\SPI_PRUEBA.X.production.o
+___lldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+SPI_Exchange@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\SPI_PRUEBA.X.production.o
+get_ldnumber@path 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\SPI_PRUEBA.X.production.o
+rcvr_datablock@buff 2 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_write@btw 71 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_write@res 81 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_put_fat 2BD4 0 CODE 0 text16 dist/default/production\SPI_PRUEBA.X.production.o
+ld_clust@dir 3 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__pdataBANK0 F7 0 BANK0 1 dataBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\SPI_PRUEBA.X.production.o
+_xmit_datablock 5756 0 CODE 0 text39 dist/default/production\SPI_PRUEBA.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext44 0 0 ABS 0 text44 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext45 0 0 ABS 0 text45 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext46 0 0 ABS 0 text46 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext47 0 0 ABS 0 text47 dist/default/production\SPI_PRUEBA.X.production.o
+__Htext48 0 0 ABS 0 text48 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_create_name 37FC 0 CODE 0 text8 dist/default/production\SPI_PRUEBA.X.production.o
+f_sync@dir 46 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_sync@res 45 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+rcvr_datablock@btr 4 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+rcvr_datablock@tmr 6 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+clust2sect@clst F 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_name@dp 9 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_name@ni 14 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_name@si 11 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+dir_register@dp 8B 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext10 51A4 0 CODE 0 text10 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext11 5370 0 CODE 0 text11 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext12 4BAC 0 CODE 0 text12 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext13 3BBA 0 CODE 0 text13 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext14 2264 0 CODE 0 text14 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext15 37FC 0 CODE 0 text15 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext16 2730 0 CODE 0 text16 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext17 303E 0 CODE 0 text17 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext18 550A 0 CODE 0 text18 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext19 528E 0 CODE 0 text19 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext20 834 0 CODE 0 text20 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext21 4F5C 0 CODE 0 text21 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext22 3F06 0 CODE 0 text22 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext23 5D66 0 CODE 0 text23 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext24 5088 0 CODE 0 text24 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext25 5AD6 0 CODE 0 text25 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext26 5800 0 CODE 0 text26 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext27 5C54 0 CODE 0 text27 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext28 4A50 0 CODE 0 text28 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext29 5442 0 CODE 0 text29 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext30 5DB4 0 CODE 0 text30 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext31 41DC 0 CODE 0 text31 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext32 5CDA 0 CODE 0 text32 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext33 1C60 0 CODE 0 text33 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext34 5D8E 0 CODE 0 text34 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext35 5D12 0 CODE 0 text35 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext36 55D0 0 CODE 0 text36 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext37 48CA 0 CODE 0 text37 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext38 4720 0 CODE 0 text38 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext39 5756 0 CODE 0 text39 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext40 4CE8 0 CODE 0 text40 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext41 5BFC 0 CODE 0 text41 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext42 5694 0 CODE 0 text42 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext43 5D3C 0 CODE 0 text43 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext44 5B9E 0 CODE 0 text44 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext45 5E04 0 CODE 0 text45 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext46 5DEC 0 CODE 0 text46 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext47 58A4 0 CODE 0 text47 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext48 5DD2 0 CODE 0 text48 dist/default/production\SPI_PRUEBA.X.production.o
+disk_status@pdrv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+___lldiv 5800 0 CODE 0 text26 dist/default/production\SPI_PRUEBA.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\SPI_PRUEBA.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\SPI_PRUEBA.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\SPI_PRUEBA.X.production.o
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_move_window 55D0 0 CODE 0 text36 dist/default/production\SPI_PRUEBA.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\SPI_PRUEBA.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_disk_read 4E24 0 CODE 0 text40 dist/default/production\SPI_PRUEBA.X.production.o
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_LATAbits F89 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@bsect 91 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@nclst 88 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_rcvr_datablock 5940 0 CODE 0 text47 dist/default/production\SPI_PRUEBA.X.production.o
+xmit_datablock@buff 4 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+xmit_datablock@resp 9 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@tsect 84 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@wmode 49 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+send_cmd@arg B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+send_cmd@cmd F 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+send_cmd@res 10 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_name@b 13 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_name@c 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_name@d 18 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_name@i 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+create_name@p 16 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\SPI_PRUEBA.X.production.o
+_select 5D3C 0 CODE 0 text43 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_SPI_Exchange 5DEC 0 CODE 0 text48 dist/default/production\SPI_PRUEBA.X.production.o
+put_fat@p 54 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\SPI_PRUEBA.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+___send_cmd 5694 0 CODE 0 text42 dist/default/production\SPI_PRUEBA.X.production.o
+dir_alloc@nent 83 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+__Lintcode 0 0 CODE 0 intcode dist/default/production\SPI_PRUEBA.X.production.o
+sync_fs@res 42 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_remove_chain 4572 0 CODE 0 text3 dist/default/production\SPI_PRUEBA.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\SPI_PRUEBA.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\SPI_PRUEBA.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+_ADCON1bits FC1 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+_ADCON2bits FC0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+disk_initialize@cmd 19 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_initialize@ocr 13 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_initialize@tmr 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__pbssBIGRAM 5D2 0 BIGRAM 1 bssBIGRAM dist/default/production\SPI_PRUEBA.X.production.o
+_disk_read 4CE8 0 CODE 0 text40 dist/default/production\SPI_PRUEBA.X.production.o
+f_mount@path 54 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_xmit_datablock 5800 0 CODE 0 text39 dist/default/production\SPI_PRUEBA.X.production.o
+disk_ioctl@buff 12 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_ioctl@pdrv 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_follow_path 43C2 0 CODE 0 text4 dist/default/production\SPI_PRUEBA.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+main@bx D0 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_send_cmd 5BFC 0 CODE 0 text41 dist/default/production\SPI_PRUEBA.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+dir_alloc@res 8A 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_find_volume 13CE 0 CODE 0 text20 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_get_fat 3430 0 CODE 0 text17 dist/default/production\SPI_PRUEBA.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_f_close 5C54 0 CODE 0 text27 dist/default/production\SPI_PRUEBA.X.production.o
+_f_mount 528E 0 CODE 0 text19 dist/default/production\SPI_PRUEBA.X.production.o
+_f_write 13CE 0 CODE 0 text1 dist/default/production\SPI_PRUEBA.X.production.o
+f_close@res 4A 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+end_of_initialization 5CD0 0 CODE 0 cinit dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_send_cmd 5C54 0 CODE 0 text41 dist/default/production\SPI_PRUEBA.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\SPI_PRUEBA.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\SPI_PRUEBA.X.production.o
+dir_sdi@idx 57 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_clust2sect 550A 0 CODE 0 text18 dist/default/production\SPI_PRUEBA.X.production.o
+f_sync@fp 43 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_put_fat$907 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_put_fat$908 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+?___lldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\SPI_PRUEBA.X.production.o
+_check_fs 5088 0 CODE 0 text24 dist/default/production\SPI_PRUEBA.X.production.o
+disk_write@buff 11 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+disk_write@pdrv 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+sync_window@res 29 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\SPI_PRUEBA.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\SPI_PRUEBA.X.production.o
+__pcinit 5C9E 0 CODE 0 cinit dist/default/production\SPI_PRUEBA.X.production.o
+_SSPCON1bits FC6 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__ptext0 5940 0 CODE 0 text0 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext1 13CE 0 CODE 0 text1 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext2 2BD4 0 CODE 0 text2 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext3 4572 0 CODE 0 text3 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext4 43C2 0 CODE 0 text4 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext5 59D4 0 CODE 0 text5 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext6 4E24 0 CODE 0 text6 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext7 5A5C 0 CODE 0 text7 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext8 3430 0 CODE 0 text8 dist/default/production\SPI_PRUEBA.X.production.o
+__ptext9 5B40 0 CODE 0 text9 dist/default/production\SPI_PRUEBA.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\SPI_PRUEBA.X.production.o
+rcvr_datablock@token 8 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext44 0 0 ABS 0 text44 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext45 0 0 ABS 0 text45 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext46 0 0 ABS 0 text46 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext47 0 0 ABS 0 text47 dist/default/production\SPI_PRUEBA.X.production.o
+__Ltext48 0 0 ABS 0 text48 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_check_fs 51A4 0 CODE 0 text24 dist/default/production\SPI_PRUEBA.X.production.o
+___send_cmd@n 9 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+create_chain@cs 69 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+create_chain@fs 56 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+put_fat@bc 51 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+put_fat@fs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\SPI_PRUEBA.X.production.o
+get_ldnumber@i 9 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+get_fat@p 51 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\SPI_PRUEBA.X.production.o
+__end_of___send_cmd 5756 0 CODE 0 text42 dist/default/production\SPI_PRUEBA.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\SPI_PRUEBA.X.production.o
+_get_fat$881 49 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_ld_clust 59D4 0 CODE 0 text5 dist/default/production\SPI_PRUEBA.X.production.o
+f_mount@cfs 58 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_mount@opt 56 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_mount@res 57 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_mount@vol 5C 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\SPI_PRUEBA.X.production.o
+f_write@buff 6F 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_write@clst 8B 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_write@sect 87 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_write@wcnt 8F 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_open@mode 9E 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_open@path 9C 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+dir_next@clst 7D 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\SPI_PRUEBA.X.production.o
+f_write@csect 84 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+disk_read@cmd 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_FatFs@ff$F740 D4 0 BANK0 1 bssBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+st_clust@cl 3 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+f_write@wbuff 82 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_sync_window 4A50 0 CODE 0 text37 dist/default/production\SPI_PRUEBA.X.production.o
+xmit_datablock@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\Wels\AppData\Local\Temp\xcAsc6c.\driver_tmp_9.o
+__end_of_ld_clust 5A5C 0 CODE 0 text5 dist/default/production\SPI_PRUEBA.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\SPI_PRUEBA.X.production.o
+__end_of__initialization 5CD0 0 CODE 0 cinit dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_remove_chain 4720 0 CODE 0 text3 dist/default/production\SPI_PRUEBA.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_dir_sdi 3F06 0 CODE 0 text13 dist/default/production\SPI_PRUEBA.X.production.o
+__pidataBANK0 5E0E 0 CODE 0 idataBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+disk_initialize@pdrv 12 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\SPI_PRUEBA.X.production.o
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+wait_ready@tmr 2 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_sync_fs 41DC 0 CODE 0 text31 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_clust2sect 55D0 0 CODE 0 text18 dist/default/production\SPI_PRUEBA.X.production.o
+dir_find@dp 81 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+___lldiv@quotient 9 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_mem_cmp 5A5C 0 CODE 0 text7 dist/default/production\SPI_PRUEBA.X.production.o
+_mem_cpy 5370 0 CODE 0 text11 dist/default/production\SPI_PRUEBA.X.production.o
+_mem_set 5CDA 0 CODE 0 text32 dist/default/production\SPI_PRUEBA.X.production.o
+_disk_initialize$641 17 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_chk_chr 5B40 0 CODE 0 text9 dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_main 59D4 0 CODE 0 text0 dist/default/production\SPI_PRUEBA.X.production.o
+_deselect 5E04 0 CODE 0 text45 dist/default/production\SPI_PRUEBA.X.production.o
+_ADRES FC3 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+_FatFs 5D2 0 BIGRAM 1 bssBIGRAM dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@fmt 97 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@rfs 45 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+find_volume@vol 80 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_LATA5 7C4D 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\SPI_PRUEBA.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\SPI_PRUEBA.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\SPI_PRUEBA.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\SPI_PRUEBA.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\SPI_PRUEBA.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\SPI_PRUEBA.X.production.o
+ld_clust@cl B 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+ld_clust@fs 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+follow_path@path 89 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+dir_find@dir 84 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+dir_find@res 86 0 BANK0 1 cstackBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+f_close@fp 48 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+_put_fat 2730 0 CODE 0 text16 dist/default/production\SPI_PRUEBA.X.production.o
+_SSPSTATbits FC7 0 ABS 0 - dist/default/production\SPI_PRUEBA.X.production.o
+__end_of_deselect 5E0E 0 CODE 0 text45 dist/default/production\SPI_PRUEBA.X.production.o
+___send_cmd@arg 4 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+___send_cmd@cmd A 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+___send_cmd@res 8 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+create_name@sfn 19 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__initialization 5C9E 0 CODE 0 cinit dist/default/production\SPI_PRUEBA.X.production.o
+disk_ioctl@n 35 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+move_window@sector 32 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__pbssBANK0 D2 0 BANK0 1 bssBANK0 dist/default/production\SPI_PRUEBA.X.production.o
+_disk_ioctl 1C60 0 CODE 0 text33 dist/default/production\SPI_PRUEBA.X.production.o
+_disk_write 4720 0 CODE 0 text38 dist/default/production\SPI_PRUEBA.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\SPI_PRUEBA.X.production.o
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+__Hsmallconst 834 0 SMALLCONST 0 smallconst dist/default/production\SPI_PRUEBA.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\SPI_PRUEBA.X.production.o
+_disk_status 5DB4 0 CODE 0 text30 dist/default/production\SPI_PRUEBA.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\SPI_PRUEBA.X.production.o
+__Hintcode 0 0 CODE 0 intcode dist/default/production\SPI_PRUEBA.X.production.o
+clust2sect@fs D 0 COMRAM 1 cstackCOMRAM dist/default/production\SPI_PRUEBA.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text20 0 834 834 55DB 1
+cstackCOMRAM 1 1 1 5F 1
+cstackBANK0 1 60 60 98 1
+reset_vec 0 0 0 4 1
+smallconst 0 800 800 34 1
+bssBIGRAM 1 5D2 5D2 22E 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
